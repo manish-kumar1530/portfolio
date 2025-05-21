@@ -29,8 +29,23 @@ nav{
     flex-wrap: wrap;
 }
 
-.logo{
-    width: 140px;
+/* .logo{ */
+    /* width: 140px; */
+/* } */
+
+.logo {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.highlight {
+  color: #e91e63; /* same pink as Kevin logo */
+}
+
+.dot {
+  color: white;
 }
 
 nav ul li{
