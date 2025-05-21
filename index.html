@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d74453cf77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <h3>Hello,It's Me</h3>
+            <h1><span>Manish Kumar Rajak</span></h1><h3>And I'm a Frontend Developer</h3>
+          </div>
+        </div>
+    </div>
+    <!--------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user_page.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there, I'm a CSE student at Bhagalpur College of Engineering, and I'm excited to share some of my work with you! I have a deep understanding of core CSE subjects and have honed my skills in front-end development. As a coordinator  of the college Nukkad clubs, I've learned valuable team management skills and organized successful events. I've also had the privilege of serving as coordinator of the college events like technoriti. I've gained prior experience as the digital marketing manager, web development intern of Vidyayan Edu. Pvt. Ltd. During this time, I had the opportunity to explore and learn many front-end tools in this web-development internship . My communication skills have enabled me to work effectively in teams and deliver top-quality results. I'm passionate about using technology to solve problems and create engaging user experiences. My portfolio showcases some of my recent work, including front-end development projects. I'm always interested in collaborating on new projects, so feel free to reach out if you'd like to work together!</p>
+               <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Front-end Development</span><br>HTML, CSS, JAVA-SCRIPT, REACTJS</li>
+                    <li><span>Programming Languages</span><br>C, C++, java-script, SQL</li>
+                    <LI><span>Libraries/Frameworks and Tools</span><br> Tailwind CSS, Bootstrap, React.js, Node.js, Express, MongoDB,
+ Firebase, Postman, Git, GitHub, VS Code</LI>
+                    <li><span>Soft Skills</span><br>Creativity,Time management,Teamwork,Leadership</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>30 May - 30 June 2022</span><br>Web Development intern at Vidyayan Learning pvt.ltd</li>
+                    <li><span>Fresher</span></li> 
+                </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2020-24</span><br>B.tec(CSE) at Bhagalpur College of Engineering,Bhagalpur</li>
+                    <li><span>2019</span><br>12th at Intermediate Marwari Pathshala,Bhagalpur</li>
+                    <li><span>2017</span><br>10th at Vishwa Vidyalaya Bal Niketan,Bhagalpur</li>
+                </ul>
+               </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------services------------------- -->
+      <div id="services">
+       <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, numquam ipsum! Quam exercitationem aliquid, ea eum obcaecati eius eaque earum, excepturi blanditiis minus non dolores doloremque labore, quia natus mollitia!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, numquam ipsum! Quam exercitationem aliquid, ea eum obcaecati eius eaque earum, excepturi blanditiis minus non dolores doloremque labore, quia natus mollitia!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, numquam ipsum! Quam exercitationem aliquid, ea eum obcaecati eius eaque earum, excepturi blanditiis minus non dolores doloremque labore, quia natus mollitia!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+       </div>
+      </div>
+      <!-- -----------prtfolio-------------- -->
+       <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Facial Emotion & Detection </h3>
+                        <p>That was my final year project in the college ,and in this project we will detect the facial emotion of the people this project is basically work on the function of CNN </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p> This Clone is basically made in the functions of HTML & CSS. In this Clone i have learn the styling and designing of the web page and some interested tools.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p> A responsive web application that fetches real-time weather data using the OpenWeatherMap API. Users can search for current conditions by city and view temperature, humidity, wind speed, and forecast details.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+       </div>
+       <!-- -------------contact-------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                         <h1 class="sub-tittle">Contact Me</h1>
+                         <p><i class="fa-solid fa-paper-plane"></i>manishkumar82011@gmail.com</p>
+                         <p><i class="fa-solid fa-square-phone"></i>6204355321</p>
+                         <div class="social-icons">
+                            <a href="https://www.facebook.com/share/198D2xm2Tf/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://x.com/ManishK14052206?t=a2Y-Z1l2NI3-56lzuwVB1A&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.instagram.com/mr.manish0506?igsh=MWphajQzcHFoem10Mg=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/manish-kumar-rajak-930045213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                         </div>
+                         <a href="images/Manish_CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                         <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                         <input type="email" name="Email" placeholder="Your Email" required>
+                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                         <button type="submit" class="btn btn2">submit</button>
+                         </form>
+                         <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p>Copyright © by Manish Kumar Rajak <i class="fa-solid fa-heart"></i> All Rights Reserved.</p>
+            </div>
+        </div>
+
+
+
+
+    <script>
+      
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
+         
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzof-wxZGqCZ2VkJ3NVCLsvhbnzv70HBaXBTbeyIBBsZgPQKm0rvQk1FKMmDsjnpZzA0w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
